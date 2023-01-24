@@ -144,6 +144,7 @@ function! codeium#server#Start(timer) abort
   call mkdir(manager_dir, 'p')
 
   let args = [
+        \ 'steam-run',
         \ bin,
         \ '--api_server_host', get(config, 'api_host', 'server.codeium.com'),
         \ '--api_server_port', get(config, 'api_port', '443'),
